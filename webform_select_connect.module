@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * Initialize the webform select connect component.
+ *
+ * @return array
+ */
+function webform_select_connect_webform_component_info() {
+  $components                   = [];
+  $components['select_connect'] = [
+    'label'       => t('Select Connect'),
+    'description' => t('Connect to select boxes together.'),
+    'features'    => [
+      // Add content to CSV downloads. Defaults to TRUE.
+      'csv'           => FALSE,
+      // Show this component in e-mailed submissions. Defaults to TRUE.
+      'email'         => FALSE,
+      // Allow this component to be used as an e-mail FROM or TO address.
+      // Defaults to FALSE.
+      'email_address' => FALSE,
+      // Allow this component to be used as an e-mail SUBJECT or FROM name.
+      // Defaults to FALSE.
+      'email_name'    => FALSE,
+      // This component may be toggled as required or not. Defaults to TRUE.
+      'required'      => FALSE,
+      // This component has a title that can be toggled as displayed or not.
+      'title_display' => FALSE,
+      // This component has a title that can be displayed inline.
+      'title_inline'  => FALSE,
+      // If this component can be used as a conditional SOURCE. All components
+      // may always be displayed conditionally, regardless of this setting.
+      // Defaults to TRUE.
+      'conditional'   => TRUE,
+      // If this component allows other components to be grouped within it
+      // (like a fieldset or tabs). Defaults to FALSE.
+      'group'         => FALSE,
+      // If this component can be used for SPAM analysis.
+      'spam_analysis' => FALSE,
+      // If this component saves a file that can be used as an e-mail
+      // attachment. Defaults to FALSE.
+      'attachment'    => FALSE,
+    ],
+    'file'        => 'webform_select_connect.components.inc',
+  ];
+  return $components;
+}

@@ -1,2 +1,4 @@
-# webform_select_connect
-Drupal 7 webform module for connecting select boxes together.
+# Webform Select Connect
+
+This module will connect two select inputs together thought
+a webservice.

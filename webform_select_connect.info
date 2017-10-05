@@ -1,0 +1,6 @@
+name = Webform Select Connect
+description = "Connects two select boxes on a webform."
+package = "Tiffin"
+dependencies[] = webform
+files[] = webform_select_connect.module
+core = 7.x
